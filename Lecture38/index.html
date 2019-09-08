@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Register</h1>
+
+    <form>
+        <label for="firstName">First Name:</label>
+        <input name="firstName" type="text" placeholder="John" required>
+        <label for="lastName">Last Name:</label>
+        <input name="lastName" type="text" placeholder="Smith" required>
+
+        <div>
+
+            <label for="male">Male</label>
+            <input name="gender" id="male" value="male" type="radio" required>
+            <label for="female">Female</label>
+            <input name="gender" id="female" value="female" type="radio" required>
+            <label for="other">Other</label>
+            <input name="gender" id="other" value="other" type="radio" required>
+
+        </div>
+
+        <div>
+
+            <label>
+                Email: 
+               <input name="emailField" id="emailField" type="email" placeholder="your email" required>
+            </label>
+            <label for="passwordField">
+                Password: 
+                <input name="passwordField" id="passwordField" type="password" placeholder="your password" minlength="5" maxlength="10" required>
+            </label>
+        </div>
+
+        <div>
+
+        <label for="monthDropdown">Birthday: </label>
+        <select name="monthDropdown" id="monthDropdown" required>
+            <option value="">Month</option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+        <select name="dayDropdown" id="dayDropdown" required>
+            <option value="">Day</option>
+            <option value="one">1</option>
+        </select>
+        <select name="yearDropdown" id="yearDropdown" required>
+            <option value="">Year</option>
+            <option value="one">1</option>
+        </select>
+
+        </div>
+
+        <div>
+            <label for="agreeCheckBox">I agree to the terms and conditions</label>
+            <input name="agreeCheckBox" id="agreeCheckBox" type="checkbox" required>
+        </div>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
