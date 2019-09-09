@@ -1,11 +1,23 @@
 h1 {
     color: #000000;
+    border-color: purple;
+    border-width: 5px;
+    border-style: dashed;
+
+    /* border: 5px purple dashed; */
 }
 
 li {
-    color: green;
+    color: rgba(0, 255, 0, 0.5);
 }
 
 h4 {
     color: yellow;
+    background: blue;
+}
+
+body {
+    background: url(https://background-tiles.com/overview/green/patterns/large/1058.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
